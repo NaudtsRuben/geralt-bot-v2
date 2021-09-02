@@ -1,7 +1,8 @@
-import { Client, Intents } from "discord.js";
+import { Client, Intents, Interaction } from "discord.js";
 import { connectDatabase } from "./database/connectDatabase";
 import { validateEnv } from "./utils/validateEnv";
 import { onMessageCreate } from "./events/onMessageCreate";
+import { onInteractionCreate } from "./events/onInteractionCreate";
 
 (async () => {
     if (!validateEnv()) return;
@@ -19,7 +20,9 @@ import { onMessageCreate } from "./events/onMessageCreate";
 
     BOT.on("messageCreate", async (message) => await onMessageCreate(message));
 
-    await connectDatabase();
+    BOT.on("interactionCreate", async (interaction) => await onInteractionCreate(interaction));
+
+    //await connectDatabase();
 
     BOT.login(process.env.BOT_TOKEN);
 })();
