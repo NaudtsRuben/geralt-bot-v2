@@ -2,6 +2,9 @@
   "name": "geralt_bot_v2",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "16.6.2"
+  },
   "main": "./prod/index.js",
   "scripts": {
     "prebuild": "rm -r ./prod",
