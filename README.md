@@ -1,6 +1,6 @@
 # geralt-bot-v2
 
-Version 2 of "geralt-bot", a personal project which I started when learning to code discord bots. Version 2 is similar to version 1, but made using TypeScript instead of JavaScript.
+Version 2 of "geralt-bot", a personal project which I started when learning to code discord bots. It is similar to version 1, but made using TypeScript instead of JavaScript.
 
 ## Features:
 ### Message listener
