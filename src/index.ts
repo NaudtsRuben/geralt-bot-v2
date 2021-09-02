@@ -12,7 +12,10 @@ import { onMessageCreate } from "./events/onMessageCreate";
 
 
 
-    BOT.on("ready", () => console.log("Connected to discord!"));
+    BOT.on("ready", () => {
+        console.log("Connected to discord!");
+        BOT.user?.setActivity('https://git.io/JExfB');
+    });
 
     BOT.on("messageCreate", async (message) => await onMessageCreate(message));
 
