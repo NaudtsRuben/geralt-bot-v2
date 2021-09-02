@@ -33,3 +33,5 @@ export const help = {
 
     }
 };
+
+module.exports = help;

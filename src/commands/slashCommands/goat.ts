@@ -26,3 +26,5 @@ export const goat = {
         }
     },
 };
+
+module.exports = goat;
