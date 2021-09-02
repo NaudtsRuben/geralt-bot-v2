@@ -6,9 +6,11 @@ import { hmm } from "../commands/messageCommands/hmm";
 import { hmmm } from "../commands/messageCommands/hmmm";
 import { sleep } from "../commands/messageCommands/sleep";
 import { sorry } from "../commands/messageCommands/sorry";
-import { goat } from "../commands/slashCommands/goat"
+import { goat } from "../commands/slashCommands/goat";
+import { help } from "../commands/slashCommands/help";
+
 
 
 
 export const MessageCommandList: MessageCommandInt[] = [ah, angry, fuck, hmm, hmmm, sleep, sorry];
-export const SlashCommandList = [goat];
+export const SlashCommandList = [goat, help];

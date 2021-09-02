@@ -1,5 +1,5 @@
 import { SlashCommandBuilder } from '@discordjs/builders';
-import { CommandInteraction, GuildMember, Interaction, Message, User } from "discord.js";
+import { CommandInteraction, GuildMember, Message } from "discord.js";
 
 export const goat = {
     data: new SlashCommandBuilder()
