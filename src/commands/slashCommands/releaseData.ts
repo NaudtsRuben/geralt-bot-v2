@@ -22,3 +22,5 @@ export const releaseData = {
 			interaction.reply({ embeds: [releaseDatesEmbed] });
 		}
 };
+
+module.exports = releaseData;
